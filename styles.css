@@ -60,6 +60,15 @@ a {
   z-index: 1000;
 }
 
+.fixed-header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fixed-header ul li {
+  margin: 0 10px;
+}
+
 .section {
   height: 100vh; /* Full viewport height */
   display: flex;
