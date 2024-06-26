@@ -14,18 +14,17 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-body {
-	line-height: 1;
+	font-size: 62.5%;
+
 }
 ol, ul {
 	list-style: none;
@@ -47,38 +46,83 @@ a {
   text-decoration: none;
 }
 
+/* VARIABLES */
+:root {
+  --primary-color: #EA1B23;
+  --secondary-color: #F3F3F3;
+  --alt-color: #CFCFCF;
+  --accent-color: #323232;
+  --accent-2-color: #6F1208;
+}
+
 /* HEADER STYLES */
 .fixed-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: transparent;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   color: #fff;
-  padding: 10px 0;
-  text-align: center;
+  padding: 18px 0;
   z-index: 1000;
+  transition: top 0.4s;
+  font-size: 1.7rem;
+  height: 22px;
 }
 
 .fixed-header ul {
   display: flex;
   justify-content: flex-end;
+  font-family: monospace;
 }
 
 .fixed-header ul li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
+.fixed-header ul li a {
+  color: var(--alt-color)
+}
+
+/* BODY STYLES */
+
 .section {
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  font-size: 1.4rem;
+  background-color: var(--alt-color)
+}
+
+/* FEATURED PAGE */
+
+#featured {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  background-color: black;
+  text-align: center;
 }
 
-#featured {
-  background-color: #f4f4f4;
+.title span {
+  font-size: 2rem;
+  font-family: "Bevan", "serif";
+  text-transform: uppercase;
+  color: var(--alt-color);
+  text-shadow: 2px 2px 4px var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+.title span:first-child {
+  font-size: 4.2rem;
+  display: block;
+  line-height: 0.7;
+}
+
+#featured p {
+  color: var(--primary-color);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 3rem;
 }
 
 #media {
