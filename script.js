@@ -1,28 +1,17 @@
-if (window.screen.height >= 1440) {
-  document.addEventListener('scroll', function() {
+// Changes the nav links color when over a brighter background
+document.addEventListener('scroll', function() {
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
   const header = document.querySelector('header');
-  const scrollPosition = window.scrollY;
+  const viewportHeight = window.innerHeight;
 
-  if (scrollPosition > 2522 && scrollPosition < 3792) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-})} else if (window.screen.height >= 768 && window.screen.height < 1440) {
-  document.addEventListener('scroll', function() {
-    console.log('ELSE', window.screen.height)
-    console.log('ELSE', window.scrollY)
-    const header = document.querySelector('header');
-    const scrollPosition = window.scrollY;
-  
-    if (scrollPosition > 1798 && scrollPosition < 2709) {
+  if (scrollPosition >= 2 * viewportHeight && scrollPosition <= 3 * viewportHeight) {
       header.classList.add('scrolled');
-    } else {
+  } else {
       header.classList.remove('scrolled');
-    }
-  });
-}
+  }
+});
 
+// Animates the media carousel
 let currentIndex = 0;
 let isDragging = false;
 let startPos = 0;
