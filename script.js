@@ -15,7 +15,7 @@ if (window.screen.height >= 1440) {
     const header = document.querySelector('header');
     const scrollPosition = window.scrollY;
   
-    if (scrollPosition > 1798) {
+    if (scrollPosition > 1798 && scrollPosition < 2709) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -115,12 +115,12 @@ images.forEach((image, index) => {
 });
 
 // Optional: Auto-rotate images every 3 seconds
-setInterval(() => {
-    if (!isDragging) {
-        currentIndex = (currentIndex + 1) % images.length;
-        setPositionByIndex();
-    }
-}, 3000);
+// setInterval(() => {
+//     if (!isDragging) {
+//         currentIndex = (currentIndex + 1) % images.length;
+//         setPositionByIndex();
+//     }
+// }, 6000);
 
 document.querySelectorAll('.dot').forEach((dot, idx) => {
     dot.addEventListener('click', () => {

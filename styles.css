@@ -213,7 +213,7 @@ header.scrolled ul li a {
 
 .carousel-container {
   position: relative;
-  /* width: 80%; */
+  width: 80%;
   max-width: 1900px;
   overflow: hidden;
 }
