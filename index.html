@@ -4,7 +4,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
   </head>
   <body>
     <header class="fixed-header">
@@ -22,7 +25,7 @@
           <source src="assets/WEBSITE VIDEO ATS.mov" type="video/mp4">
           Your browser does not support the video tag.
       </video>
-  </div>
+    </div>
     <section class="section" id="featured">
       <div class="title">
         <span>Against</span>
@@ -75,24 +78,31 @@
     </section>
     <section class="section" id="media">
       <div class="carousel-container">
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <img src="https://cdn.mos.cms.futurecdn.net/EQzLmDCLqJgxVgjwKpf5fd-970-80.jpg.webp" class="carousel-image active" alt="Image 1">
-            <img src="https://cdn.mos.cms.futurecdn.net/EQzLmDCLqJgxVgjwKpf5fd-970-80.jpg.webp" class="carousel-image" alt="Image 2">
-            <img src="https://cdn.mos.cms.futurecdn.net/EQzLmDCLqJgxVgjwKpf5fd-970-80.jpg.webp" class="carousel-image" alt="Image 3">
-            <!-- Add more images as needed -->
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="/assets/Untitled_1.1.2.png"></li>
+              <li class="glide__slide"><img src="/assets/Untitled_1.1.5.png"></li>
+              <li class="glide__slide"><img src="/assets/Untitled_1.3.9.png"></li>
+              <li class="glide__slide"><img src="/assets/Untitled_1.3.36.png"></li>
+              <li class="glide__slide"><img src="/assets/Untitled_1.3.45.png"></li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
           </div>
         </div>
-        <div class="carousel-dots">
-            <span class="dot active" onclick="showImage(0)"></span>
-            <span class="dot" onclick="showImage(1)"></span>
-            <span class="dot" onclick="showImage(2)"></span>
-            <!-- Add more dots as needed -->
-        </div>
-    </div>
+      </div>
     </section>
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-content">
         <div class="footer-section links">
           <h2>Quick Links</h2>
@@ -107,26 +117,27 @@
         <div class="footer-section contact">
           <h2>Contact Us</h2>
           <p>
-              <span>Address:</span> 123 Main Street, Anytown, USA
+            <span>Address:</span> 123 Main Street, Anytown, USA
           </p>
           <p>
-              <span>Phone:</span> (123) 456-7890
+            <span>Phone:</span> (123) 456-7890
           </p>
           <p>
-              <span>Email:</span> info@example.com
+            <span>Email:</span> info@example.com
           </p>
           <div class="socials">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         &copy; 2024 A Black Bottom Studios film | Designed by Bradly Lewis LLC
       </div>
-    </footer>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>  
     <script src="script.js"></script>
   </body>
 </html>
