@@ -99,12 +99,36 @@ header.scrolled ul li a {
   color: black; /* Changes the font color after you scroll past a certain point */
 }
 
+/* BACKGROUND VIDEO */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-size: cover;
+}
+
 /* FEATURED PAGE */
 #featured {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background: transparent;
   text-align: center;
 }
 
