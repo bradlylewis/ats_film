@@ -186,6 +186,20 @@ header.scrolled ul li a {
   height: auto;
 }
 
+.glide__arrows .glide__arrow {
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.glide__arrow i {
+  font-size: 2rem;
+  color: white;
+}
+
 /* GALLERY MODAL */
 .modal {
   display: none;
@@ -256,8 +270,24 @@ header.scrolled ul li a {
 }
 
 /* SECOND BREAKPOINT */
-/* ABOUT PAGE */
 @media (max-width: 1550px) {
+  /* ABOUT PAGE */
+  .about-content img {
+    width: 350px;
+  }
+
+  .about-content .synopsis {
+    width: 35%
+  }
+
+  .about-content p {
+    font-size: 1.3rem;
+  }
+}
+
+/* THIRD BREAKPOINT */
+@media (max-width: 1048px) {
+  /* ABOUT PAGE */
   #about {
     height: unset;
   }
@@ -282,44 +312,28 @@ header.scrolled ul li a {
     border-radius: 4px;
   }
 
+  .about-content .synopsis {
+    width: unset
+  }
+
   .about-content p {
     font-size: 1.5rem;
     max-width: unset;
     width: 90%;
     margin: 3% auto 22%;
   }
+
+  /* CAST & CREW */
+  .cast-group-container {
+    display: block;
+    height: 70%;
+    width: 23%;
+    margin: auto;
+  }
+
+  .cast-group {
+    padding-bottom: 5rem;
+  }
 }
-
-/* THIRD BREAKPOINT */
-/* ABOUT PAGE */
-@media (max-width: 900px) {
-
-}
-
-/* FOURTH BREAKPOINT */
-/* ABOUT PAGE */
-@media (max-width: 600px) {
-
-}
-
-
-
-
-.glide__arrows .glide__arrow {
-  background: none;
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
-  padding: 10px;
-  transition: transform 0.2s;
-}
-
-.glide__arrow i {
-  font-size: 2rem;
-  color: white;
-}
-
-
-
 
 
