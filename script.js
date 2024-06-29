@@ -4,7 +4,7 @@ document.addEventListener('scroll', function() {
   const header = document.querySelector('header');
   const viewportHeight = window.innerHeight;
 
-  if (scrollPosition >= 2 * viewportHeight && scrollPosition <= 3 * viewportHeight) {
+  if (scrollPosition >= 2 * viewportHeight - 20 && scrollPosition <= 3 * viewportHeight - 20) {
       header.classList.add('scrolled');
   } else {
       header.classList.remove('scrolled');

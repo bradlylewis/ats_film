@@ -108,7 +108,7 @@ header.scrolled ul li a {
 
 /* ABOUT PAGE */
 #about {
-  background: linear-gradient(45deg, #121212, var(--accent-2-color));
+  background: linear-gradient(45deg, #121212, var(--primary-color));
   display: flex;
   align-items: center;
 }
@@ -170,7 +170,7 @@ header.scrolled ul li a {
 
 /* GALLERY PAGE*/
 #media {
-  background: linear-gradient(45deg, #121212, var(--accent-2-color));
+  background: linear-gradient(45deg, #121212, var(--primary-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,6 +179,17 @@ header.scrolled ul li a {
 
 .carousel-container {
   width: 75%;
+  border: 2px solid black;
+  padding: 6px 6px 0px 6px;
+  background-color: var(--secondary-color);
+  box-shadow: 4px 4px 10px var(--accent-2-color);
+  border: 3px solid var(--accent-2-color);
+  border-radius: 6px;
+
+}
+
+.carousel-container .glide--swipeable {
+  cursor: default;
 }
 
 .glide__slide img {
